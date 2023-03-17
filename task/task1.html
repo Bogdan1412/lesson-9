@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3>1. Користувач вводить кількість елементів. Створити масив, що складається з вказаної кількості елементів заповнених нулями.</h3>
+	<script>
+		//1 функцию которая создать масив
+		function getNewArr(quantity) {
+			return new Array(quantity).fill(0)
+		}
+		const userEnterQantity = parseInt(prompt('Enter quantity'))
+		const quantity_0 = getNewArr(userEnterQantity)
+		document.write(`Result = ${quantity_0}`)
+	</script>
+</body>
+
+</html>

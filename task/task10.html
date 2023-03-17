@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3> Дано масив цін у грн. Податок складає 20%. Сформувати масив, який буде містити величину сплаченого податку у грн. </h3>
+	<script>
+		function randomNumber(minV, maxV) {
+			return minV + Math.floor(Math.random() * (maxV - minV + 1))
+		}
+		function createNewArray(numberArr,minNumber,maxNumber) {
+			let arr = []
+			for (let index = 0; index < numberArr; index++) {
+				arr.push(randomNumber(minNumber,maxNumber))
+			}
+			return arr
+		}
+		const userSumArr = createNewArray(12,100,10000)
+		document.write(`Amount for 12 month = ${userSumArr}<br>`)
+		console.log(userSumArr);
+		const totalTaxYear = userSumArr.map((value) => (value * 20) / 100)
+		document.write(`Tax for 12 month = ${totalTaxYear}`)
+		console.log(totalTaxYear);
+		
+		
+		// function getTaxYear(userSumArr) {
+		// 	const sumTax = userSumArr.map((value) => (value * 20) / 100)
+		// 	return sumTax
+		// }
+		// getTaxYear(userSumArr)
+		// console.log(userSumArr);
+
+		// let sum = [1111,2222,3333,4444,5555,6666,7777,8888,9999]
+	</script>
+</body>
+
+</html>

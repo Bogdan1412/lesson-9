@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3>5.Дано масив елементів. Знайти добуток додатних елементів</h3>
+	<script>
+		function multiplyPositiveArr(array) {
+			let result = 1
+			for (const number of array) {
+				if (number > 0) result *= number
+			}
+			return result
+		}
+		let arr = [-1, 5, -7, 55, 6, -9]
+		const result = multiplyPositiveArr(arr)
+		document.write(`Positive array is = ${result}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// function myltiplyPositive(array) {
+		// 	let result = 1
+		// 	for (const number of array) {
+		// 		if (number > 0) result *= number
+		// 	}
+		// 	return result
+		// }
+		// let arr = [-1, 5, -7, 55, 6, -9]
+		// let result = myltiplyPositive(arr)
+		// console.log(result);
+	</script>
+</body>
+
+</html>

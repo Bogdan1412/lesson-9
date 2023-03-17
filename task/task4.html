@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3>4.Дано масив елементів. Вивести на екран елементи, що більші за 100</h3>
+	<script>
+		let arr = [22, 234, 555, 666, 743, 44, 5, 67]
+		let arrMore_100 = []
+		for (const eliment of arr) {
+			if (eliment > 100) {
+				arrMore_100.push(eliment)
+			}
+		}
+		document.write(`Result = ${arrMore_100}`)
+		console.log(arrMore_100);
+	</script>
+</body>
+
+</html>
